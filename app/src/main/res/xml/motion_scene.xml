@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            motion:constraintSetStart="@layout/activity_main"
+            motion:constraintSetEnd="@layout/activity_main2"
+            motion:duration="3000">
+
+        <OnClick
+                motion:targetId="@id/run"/>
+
+        <OnSwipe
+                motion:touchAnchorId="@+id/imageState"
+                motion:touchAnchorSide="bottom"
+                motion:dragDirection="dragDown"/>
+
+    </Transition>
+
+
+</MotionScene>
